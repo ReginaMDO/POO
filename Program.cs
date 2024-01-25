@@ -17,13 +17,13 @@ namespace DesafioPOO
             nokia.Ligar();
             nokia.ReceberLigacao();
             nokia.InstalarAplicativo("WhatsApp");
-            Console.WriteLine("\n-----------------------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------------------------");
 
             Console.WriteLine("\n-----------------------------------------------------------------");
             iPhone.Ligar();
             iPhone.ReceberLigacao();
             iPhone.InstalarAplicativo("Instagram");
-            Console.WriteLine("\n-----------------------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------------------------");
         }
     }
 }
