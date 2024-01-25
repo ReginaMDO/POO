@@ -1,7 +1,5 @@
 ﻿using DesafioPOO.Models;
 
-// TODO: Realizar os testes com as classes Nokia e Iphone
-
 namespace DesafioPOO
 {
     class Program
@@ -9,17 +7,21 @@ namespace DesafioPOO
         static void Main()
         {
             // Criando instâncias de Nokia e Iphone
-            Nokia nokia = new Nokia("91234-5678", "Nokia XYZ", "Nokia");
-            Iphone iPhone = new Iphone("98765-4321", "Iphone 12", "Apple");
+            Nokia nokia = new Nokia("91234-5678", "Nokia XYZ",  "105689243750975", 64);
+            Iphone iPhone = new Iphone("98765-4321", "Iphone 12", "739884273890471", 128);
 
             // Chamando métodos
-            Console.WriteLine("\n-----------------------------------------------------------------");
+            Console.WriteLine("-----------------------------------------------------------------");
+            nokia.info();
+            Console.WriteLine("-----------------------------------------------------------------");
             nokia.Ligar();
             nokia.ReceberLigacao();
             nokia.InstalarAplicativo("WhatsApp");
             Console.WriteLine("-----------------------------------------------------------------");
 
             Console.WriteLine("\n-----------------------------------------------------------------");
+            iPhone.info();
+            Console.WriteLine("-----------------------------------------------------------------");
             iPhone.Ligar();
             iPhone.ReceberLigacao();
             iPhone.InstalarAplicativo("Instagram");
