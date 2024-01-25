@@ -9,19 +9,21 @@ namespace DesafioPOO
         static void Main()
         {
             // Criando instâncias de Nokia e Iphone
-            Nokia nokia = new Nokia("123456789", "Nokia XYZ", "Nokia");
-            Iphone iPhone = new Iphone("987654321", "iPhone 12", "Apple");
+            Nokia nokia = new Nokia("91234-5678", "Nokia XYZ", "Nokia");
+            Iphone iPhone = new Iphone("98765-4321", "Iphone 12", "Apple");
 
             // Chamando métodos
+            Console.WriteLine("\n-----------------------------------------------------------------");
             nokia.Ligar();
             nokia.ReceberLigacao();
             nokia.InstalarAplicativo("WhatsApp");
+            Console.WriteLine("\n-----------------------------------------------------------------");
 
-            Console.WriteLine();
-
+            Console.WriteLine("\n-----------------------------------------------------------------");
             iPhone.Ligar();
             iPhone.ReceberLigacao();
             iPhone.InstalarAplicativo("Instagram");
+            Console.WriteLine("\n-----------------------------------------------------------------");
         }
     }
 }
